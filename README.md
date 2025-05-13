@@ -27,10 +27,10 @@ English version underneaath
 
 <img src="https://github.com/giraffeiscute/python-simulation-projects-game-theory-and-Prisoner-s-Dilemma/blob/main/result/%E5%9C%96%E7%89%872.png" alt="image" width="600">
 
-模擬結果: (C為合作D為背叛)
-[(C, D), (D, D), (D, D), (D, D), (D, C), 
- (C, C), (C, D), (D, D), (D, C), (C, C), 
- (C, D), (D, D), (D, C), (C, C), (C, D), 
+模擬結果: (C為合作D為背叛) <br/>
+[(C, D), (D, D), (D, D), (D, D), (D, C), <br/>
+ (C, C), (C, D), (D, D), (D, C), (C, C), <br/>
+ (C, D), (D, D), (D, C), (C, C), (C, D), <br/>
  (D, D), (D, C), (C, C), (C, C), (C, C)]
 
 ## 實驗結論
@@ -48,6 +48,8 @@ English version underneaath
 Python
 
 Numpy / Matrix 運算
+
+Axelrod 賽局模擬套件
 
 ## 總結
 本專案綜合運用了線性代數、經濟學與程式設計等領域知識，深化了對策略行為建模與量化分析的理解，也反思了模型在人類心理層面的侷限。
