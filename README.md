@@ -13,7 +13,7 @@ English version underneaath
 ## 研究內容
 ### 奈許均衡策略分析
 透過線性代數方法與矩陣運算，分析以下賽局：
-- 膽小鬼賽局（Chicken Game）
+- 囚徒困境模擬
 
 - 雙公司策略分配賽局
 
@@ -23,8 +23,25 @@ English version underneaath
 ### 囚徒困境模擬（Tit for Tat 策略）
 模擬兩位囚犯互動20次，其中一方使用「以牙還牙」策略，另一方隨機行動。根據 Douglas Hofstadter 所提出的支付矩陣進行模擬分析。
 
+此為本實驗之Douglas Hofstadter 支付矩陣設定
 
+<img src="https://github.com/giraffeiscute/python-simulation-projects-game-theory-and-Prisoner-s-Dilemma/blob/main/result/%E5%9C%96%E7%89%872.png" alt="image" width="600">
 
+模擬結果: (C為合作D為背叛)
+[(C, D), (D, D), (D, D), (D, D), (D, C), 
+ (C, C), (C, D), (D, D), (D, C), (C, C), 
+ (C, D), (D, D), (D, C), (C, C), (C, D), 
+ (D, D), (D, C), (C, C), (C, C), (C, C)]
+
+## 實驗結論
+1. 以牙還牙具備穩定性與回復性
+- 雖然初期出現背叛 (如前幾輪出現連續 (D, D))，但只要對方不再持續背叛（如第 5 回合玩家 B 選擇 C），「以牙還牙」策略便會選擇合作，並逐漸重建互信。這可從第 6、10、14、18~20 回合出現 (C, C) 看出。
+
+2. 策略回應模式可抑制背叛連鎖
+- 玩家 A 不會主動背叛，僅在對方背叛時回應一次背叛，這樣的策略可避免無止盡的 (D, D) 惡性循環，鼓勵對方回歸合作。
+
+3. 長期合作可逐漸形成
+- 模擬結果在後期（第 18～20 回合）呈現穩定的雙方合作 (C, C)，證實了「以牙還牙」策略在囚徒困境中的有效性，有助於建立長期穩定的合作關係。
 
 
 ## 技術與工具
